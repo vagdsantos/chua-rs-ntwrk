@@ -1,5 +1,14 @@
-!ifort -fast chua_chimera.f90 -o x.x ; time ./x.x
-!gfortran -O3 -cpp chua_chimera.f90 -o x.x ; time ./x.x
+!! Written by Vagner dos Santos
+!! Professor at State Univertsity of Ponta Grossa, Paraná State,  Brazil.
+!!
+!! Compile and execute using the following commands:
+!!
+!! INTEL Compiler:
+!! ifort -fast chua_chimera.f90 -o x.x ; time ./x.x
+!!
+!! GNU Compiler:
+!! gfortran -O3 -cpp chua_chimera.f90 -o x.x ; time ./x.x
+!!
 module precisionparams
   integer, parameter :: bit=8!    floating-point precision (4 = single precision; 8 = double precision)
   real(kind=bit), parameter :: pi = 4.e0_bit*atan(1.e0_bit)!      Pi constant
